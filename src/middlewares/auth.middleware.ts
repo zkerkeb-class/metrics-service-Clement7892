@@ -12,7 +12,6 @@ declare global {
   }
 }
 
-// Configuration
 const JWT_SECRET = config.jwt.secret;
 
 export const authenticateJWT = (
