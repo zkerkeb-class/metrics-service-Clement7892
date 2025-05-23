@@ -153,7 +153,7 @@ class HealthService {
         color: downServices > 0 ? 15158332 : 3066993, // Rouge si services down, vert sinon
         timestamp: new Date().toISOString(),
         footer: {
-          text: `CRM AndreClaveria - Monitoring • ${new Date().toLocaleTimeString("fr-FR", { hour: "2-digit", minute: "2-digit" })}`
+          text: `CRM Clement7892 - Monitoring • ${new Date().toLocaleTimeString("fr-FR", { hour: "2-digit", minute: "2-digit" })}`
         },
         fields: []
       };
@@ -344,7 +344,7 @@ class HealthService {
         color: 3066993, // Vert
         timestamp: new Date().toISOString(),
         footer: {
-          text: `CRM AndreClaveria - Monitoring • ${new Date().toLocaleTimeString("fr-FR", { hour: "2-digit", minute: "2-digit" })}`
+          text: `CRM Clement7892 - Monitoring • ${new Date().toLocaleTimeString("fr-FR", { hour: "2-digit", minute: "2-digit" })}`
         }
       };
 

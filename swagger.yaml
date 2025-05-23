@@ -1,16 +1,16 @@
 openapi: 3.0.0
 info:
-  title: CRM AndreClaveria Notification Service API
+  title: CRM Clement7892 Notification Service API
   version: 1.0.0
-  description: Documentation de l'API du microservice de Notification pour le CRM AndreClaveria
+  description: Documentation de l'API du microservice de Notification pour le CRM Clement7892
   contact:
     name: Support
-    email: support@andreclaveria.fr
+    email: support@clement7892.fr
 
 servers:
   - url: http://localhost:3004
     description: Serveur de développement
-  - url: https://api.andreclaveria.fr/notification
+  - url: https://api.clement7892.fr/notification
     description: Serveur de production
 
 components:
