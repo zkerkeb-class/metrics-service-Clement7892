@@ -1,7 +1,7 @@
-# metrics-service-Clement7892
+# metrics-service-AndreClaveria
 
 ## Description
-This is a microservice for the Clement7892 project.
+This is a microservice for the AndreClaveria project.
 
 ## Installation
 `ash

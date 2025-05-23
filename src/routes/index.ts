@@ -1,8 +1,11 @@
-import { Router } from 'express';
+import { Router } from "express";
+import healthRoutes from "./health.routes";
 
 const router = Router();
 
-// Add your routes here
-// router.use('/users', userRoutes);
+// Routes de santé
+router.use("/health", healthRoutes);
+// Routes de notification
+
 
 export default router;
