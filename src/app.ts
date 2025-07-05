@@ -9,6 +9,11 @@ import morgan from "morgan";
 import route from "./routes/index";
 import config from "./config";
 import { setupSwagger } from "./config/swagger.config";
+import {
+  metricsMiddleware,
+  bandwidthMiddleware
+} from "./middlewares/metrics.middleware";
+
 const app: Application = express();
 
 // Middlewares
@@ -16,6 +21,10 @@ app.use(helmet()); // Sécurité
 app.use(cors()); // Gestion CORS
 app.use(express.json()); // Parsing JSON
 app.use(morgan("dev")); // Logs HTTP
+
+// Middlewares de métriques
+app.use(metricsMiddleware); // Collecte automatique des métriques de requêtes
+app.use(bandwidthMiddleware); // Collecte automatique des métriques de bande passante
 
 // Routes
 app.use("/api", route);

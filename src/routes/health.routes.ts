@@ -1,9 +1,5 @@
 import { Router } from "express";
 import healthController from "../controllers/health.controller";
-import {
-  authenticateJWT,
-  authorizeRoles
-} from "../middlewares/auth.middleware";
 
 const router = Router();
 
